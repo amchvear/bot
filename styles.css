@@ -148,3 +148,51 @@ footer p {
   margin-top: 20px;
 }
 
+/* Add this CSS at the end of your existing CSS */
+
+/* Add transition effects to navigation items when they are active */
+nav ul li a.active {
+  color: #00FFD1;
+  border-bottom: 2px solid #00FFD1;
+}
+
+/* Parallax background effect on hero section */
+.hero {
+  background-attachment: fixed; /* Allows the parallax effect */
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Section animations with slight delay */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition-delay: 0s; /* Default no delay */
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#about {
+  --delay: 0.2s;
+}
+
+#features {
+  --delay: 0.4s;
+}
+
+#tech {
+  --delay: 0.6s;
+}
+
+#contact {
+  --delay: 0.8s;
+}
+
+.section.visible {
+  transition-delay: var(--delay);
+}
+
