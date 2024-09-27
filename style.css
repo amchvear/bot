@@ -5,6 +5,7 @@ body {
     background-image: linear-gradient(to bottom, #3498db, #2980b9);
     background-size: 100% 100vh;
     background-position: 0% 100%;
+    scroll-behavior: smooth;
 }
 
 .nav {
@@ -74,6 +75,14 @@ body {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .img-fluid {
