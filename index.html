@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Humanoid Robot Project Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Humanoid Robot Information</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">About the Robot</a></li>
-                <li><a href="#" class="nav-link">Project Updates</a></li>
-                <li><a href="#" class="nav-link">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Humanoid Robot Project Website</h1>
-            <p>Explore the future of robotics with us</p>
-            <button class="btn">Learn More</button>
-        </div>
-    </header>
-    <main>
-        <section class="section">
-            <h2>Meet Our Humanoid Robot</h2>
-            <p>Our humanoid robot, named Hubo, is designed to mimic human-like movements and interactions.</p>
-            <img src="hubo.jpg" alt="Hubo, our humanoid robot" class="img-fluid">
-        </section>
-        <section class="section">
-            <h2>Robot Specifications</h2>
-            <ul>
-                <li>Height: 170 cm</li>
-                <li>Weight: 60 kg</li>
-                <li>Number of joints: 32</li>
-                <li>Operating system: Linux</li>
-            </ul>
-        </section>
-        <section class="section">
-            <h2>Project Updates</h2>
-            <p>Stay up-to-date with the latest developments in our project</p>
-            <button class="btn">Read More</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Humanoid Robot Project Website</p>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <nav>
+      <div class="logo">Robotica</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Meet the Future of Robotics</h1>
+      <p>Discover the most advanced humanoid robot designed to enhance human interaction and automate tasks.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="content">
+      <h2>About Our Humanoid Robot</h2>
+      <p>Our humanoid robot is designed to mimic human-like movements and behaviors. It's equipped with AI technology to interact intelligently with its surroundings, understand emotions, and perform complex tasks.</p>
+    </div>
+  </section>
+
+  <section id="features" class="section features">
+    <div class="content">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Advanced AI and Machine Learning Capabilities</li>
+        <li>Human-Like Movements and Interaction</li>
+        <li>High-Resolution Sensors for Environment Detection</li>
+        <li>Facial Recognition and Emotion Detection</li>
+        <li>Autonomous Navigation and Task Automation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="tech" class="section tech">
+    <div class="content">
+      <h2>Technology</h2>
+      <p>The robot is powered by cutting-edge AI algorithms, sensor arrays, and mechanical actuators to ensure precision and adaptability. From healthcare assistance to industrial automation, this robot is designed for versatility and efficiency.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Contact Us</h3>
+      <p>Interested in learning more or investing in humanoid robotics? Reach out to us!</p>
+      <a href="mailto:info@robotica.com" class="btn">Contact</a>
+    </div>
+    <p class="copyright">© 2024 Robotica. All rights reserved.</p>
+  </footer>
 </body>
 </html>
